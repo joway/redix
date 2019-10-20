@@ -1,8 +1,4 @@
-FROM golang:alpine
-
-RUN apk update && apk add git build-base
-
-RUN go get github.com/alash3al/redix
+FROM alash3al/redix:latest
 
 EXPOSE 6382 7090
 
